@@ -1,0 +1,1 @@
+export { ProductSquare } from "./ProductSquare"

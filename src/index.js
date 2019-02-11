@@ -1,15 +1,19 @@
 import React from "react"
 import ReactDOM from "react-dom"
+
+import Products from "#shared/contexts/Products"
+import { App } from "#components/App"
 import "./index.css"
 
-const App = () => (
-  <div styleName="App">
-    <If condition={true}>yolo</If>
-    <p>App here.</p>
-  </div>
-)
+const Wrapper = () => {
+  return (
+    <Products.Provider>
+      <App />
+    </Products.Provider>
+  )
+}
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<Wrapper />, document.getElementById("root"))
 
 // Hot Module Replacement
 if (module.hot) {
