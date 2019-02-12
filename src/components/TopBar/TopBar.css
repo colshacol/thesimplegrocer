@@ -1,3 +1,36 @@
 .TopBar {
-	display: flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 60px;
+  background: white;
+  padding: 0 24px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.logo span {
+  font-weight: 700;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.right ul {
+  list-style-type: none;
+}
+
+.right li {
+  display: inline;
+  margin-left: 24px;
 }

@@ -1,15 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
+  background: linear-gradient(to bottom, #f4f4f4, white);
   font-family: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-
-.App {
-  display: flex;
-}
-
 * {
+  font-family: "Inter";
   box-sizing: border-box;
   padding: 0;
   margin: 0;

@@ -1,19 +1,100 @@
 .ProductSquare {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  background: white;
-  margin: 8px;
+}
+
+.bottom {
+  margin-top: 8px;
+  display: flex;
+}
+
+.bottomLeft {
+  padding-right: 8px;
+  width: 100%;
+}
+
+.bottomRight {
+  width: 120px;
+}
+
+.middle {
+  margin-top: 8px;
+}
+
+.addToCartButton {
+  border-radius: 16px;
+  width: 104px;
+  font-size: 16px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00646f;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.addToCartButton img {
+  margin-left: 2px;
+}
+
+.addToCartButton .price {
+  padding-left: 2px;
+  margin: 0 auto;
+  margin-left: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  width: calc(100% - 35px);
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-family: "Inter";
+}
+
+.addToCartButton .icon {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 35px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale {
+  z-index: 2;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  font-weight: 700;
+  background: linear-gradient(-190deg, #ffa558, #f77b11);
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+}
+
+.name {
+  font-size: 14px;
+  margin: 4px 0;
 }
 
 .startingAt {
-  opacity: 0.4;
+  color: #0f7a03;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 4px;
+  font-weight: 700;
 }
 
-.layer {
+.top {
+  position: relative;
   display: flex;
-  width: 320px;
-  height: 360px;
-  margin-bottom: 12px;
+  max-width: 320px;
+  height: 160px;
 }
 
 .inner {
